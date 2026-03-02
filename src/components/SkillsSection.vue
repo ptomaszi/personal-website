@@ -12,43 +12,43 @@ interface SkillCategory {
 
 const categories: SkillCategory[] = [
   {
-    title: 'AI / ML',
+    title: 'AI & Agentic Systems',
     emoji: '🧠',
     skills: [
-      { label: 'AWS Bedrock', icon: '☁️' },
-      { label: 'Strands Agents SDK', icon: '🤖' },
-      { label: 'LiteLLM', icon: '⚡' },
       { label: 'LLM Orchestration', icon: '🔗' },
+      { label: 'Agentic Architecture', icon: '🤖' },
+      { label: 'Prompt Engineering', icon: '✍️' },
+      { label: 'RAG & Retrieval', icon: '🔍' },
     ],
   },
   {
-    title: 'Backend',
+    title: 'Software Engineering',
     emoji: '⚙️',
     skills: [
-      { label: '.NET 9 / C#', icon: '🟣' },
-      { label: 'Python', icon: '🐍' },
-      { label: 'DynamoDB', icon: '🗄️' },
-      { label: 'Kafka', icon: '📨' },
+      { label: 'System Design', icon: '🏛️' },
+      { label: 'API Design', icon: '🔌' },
+      { label: 'Event-Driven Design', icon: '📨' },
+      { label: 'Full-Stack Dev', icon: '🔷' },
     ],
   },
   {
-    title: 'Frontend',
-    emoji: '🎨',
+    title: 'Cloud & Platform',
+    emoji: '☁️',
     skills: [
-      { label: 'Vue 3', icon: '💚' },
-      { label: 'TypeScript', icon: '🔷' },
-      { label: 'Lit', icon: '🔥' },
-      { label: 'Vite', icon: '⚡' },
+      { label: 'Cloud Architecture', icon: '🏗️' },
+      { label: 'IaC', icon: '🌱' },
+      { label: 'Containers', icon: '🐳' },
+      { label: 'CI/CD Pipelines', icon: '🔄' },
     ],
   },
   {
-    title: 'Infrastructure',
-    emoji: '🏗️',
+    title: 'Data & Integration',
+    emoji: '🗄️',
     skills: [
-      { label: 'AWS', icon: '☁️' },
-      { label: 'OpenTofu', icon: '🌱' },
-      { label: 'Docker', icon: '🐳' },
-      { label: 'CI/CD', icon: '🔄' },
+      { label: 'Data Modelling', icon: '📊' },
+      { label: 'Stream Processing', icon: '🌊' },
+      { label: 'API Integration', icon: '🔗' },
+      { label: 'Cost Optimization', icon: '💰' },
     ],
   },
   {
@@ -56,9 +56,9 @@ const categories: SkillCategory[] = [
     emoji: '🚀',
     skills: [
       { label: 'Team Leadership', icon: '👥' },
-      { label: 'Architecture', icon: '🏛️' },
       { label: 'Technical Strategy', icon: '🎯' },
       { label: 'Mentoring', icon: '📖' },
+      { label: 'Stakeholder Mgmt', icon: '🤝' },
     ],
   },
 ]
@@ -67,7 +67,7 @@ const categories: SkillCategory[] = [
 <template>
   <section id="skills" class="skills">
     <div class="container">
-      <h2 class="section-title fade-in">Skills & Tech Stack</h2>
+      <h2 class="section-title fade-in">Skills & Expertise</h2>
 
       <div class="categories">
         <div v-for="category in categories" :key="category.title" class="category fade-in">
@@ -95,7 +95,7 @@ const categories: SkillCategory[] = [
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
   gap: var(--space-md);
 }
 
@@ -141,6 +141,8 @@ const categories: SkillCategory[] = [
   border: 1px solid transparent;
   transition: all var(--transition);
   cursor: default;
+  min-width: 0;
+  overflow: hidden;
 }
 
 .skill-card:hover {
@@ -159,6 +161,9 @@ const categories: SkillCategory[] = [
   font-size: 0.8rem;
   color: var(--text);
   letter-spacing: 0.02em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media (max-width: 768px) {

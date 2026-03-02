@@ -104,8 +104,8 @@ onMounted(initParticles)
           Architecting intelligent systems at the intersection of engineering and AI
         </p>
         <div class="hero-badge">
-          <span class="badge-icon">⚡</span>
-          Building with Claude Code · Copilot · Kiro
+          <span class="badge-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6.5L3.5 12 8 17.5M16 6.5l4.5 5.5-4.5 5.5M13 4l-2 16"/></svg></span>
+          Building with Claude Code
         </div>
         <div class="hero-cta">
           <a href="https://github.com/ptomaszi" target="_blank" rel="noopener noreferrer" class="btn btn-primary" aria-label="GitHub profile">
@@ -133,7 +133,7 @@ onMounted(initParticles)
           integration, ensuring LLM workloads remain performant, cost-efficient, and scalable.
         </p>
         <p>
-          With 4+ years as a Lead Software Engineer building enterprise systems in .NET, Azure, and AWS,
+          With a strong software engineering background and an MSc(Eng) in Computer Science,
           I bridge full-stack engineering and cutting-edge AI — transforming raw model capabilities into
           stable, scalable applications.
         </p>
